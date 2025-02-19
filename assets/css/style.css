@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 70px 1fr 1fr;
+  grid-template-areas:
+    "aside header"
+    "aside content-dashboard"
+    "aside content-dashboard";
+
+  height: 100vh;
+}
+
+.header {
+  padding: 10px 30px;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #fff;
+}
+
+.content-dashboard {
+  grid-area: content-dashboard;
+  border: #E0E0E0 0.6px solid;
+
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0.6px solid #d5d5d5;
+  background-color: #f5f6fa;
+
+  padding: 10px;
+  border-radius: 19px;
+}
+
+.search input {
+  width: 388px;
+  outline: none;
+  border: none;
+  background-color: #f5f6fa;
+}
+
+.content-search {
+  display: flex;
+  gap: 20px;
+}
+
+.info-header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.info-user span {
+  font-size: 10px;
+}
+
+.info-user p {
+  font-size: 12px;
+}
+
+.image-user {
+  width: 30px;
+  border-radius: 20px;
+}
+
+#language {
+  border: none;
+  outline: none;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.cards-dashboard {
+  width: 262px;
+  height: 161px;
+  background-color: #fff;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px;
+  position: relative;
+}
+
+.cards-dashboard p {
+  font-size: 16px;
+  color: #202224;
+  font-weight: bolder;
+}
+
+.cards-dashboard span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.icon-card {
+  width: 60px;
+  right: 20px;
+  bottom: 90px;
+  position: absolute;
+}
+
+.color-card {
+  color: green;
+  text-decoration: none;
+}
+
+.color-card-red {
+  text-decoration: none;
+}
+
+.title {
+  margin: 30px;
+}
+
+.salecard {
+    padding: 10px 30px;
+  width: 100%;
+  max-height: 500px;
+}
