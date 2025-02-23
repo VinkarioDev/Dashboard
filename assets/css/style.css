@@ -16,9 +16,9 @@ body {
   grid-template-areas:
     "aside header"
     "aside content-dashboard"
+    "aside content-dashboard"
     "aside content-dashboard";
 
-  height: 100vh;
 }
 
 .header {
@@ -33,6 +33,57 @@ body {
 .aside {
   grid-area: aside;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.aside nav{
+  width: 100%;
+}
+
+.aside nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.border-divider{
+  border-bottom: 0.6px solid #d5d5d5;
+}
+
+.aside nav ul li{
+  padding: 25px;
+  width: 192px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 6px;
+}
+.aside nav ul li:hover{
+  background-color: #4880FF;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 300ms ease-in-out;
+ 
+}
+
+h3{
+  margin-top: 16px;
+  padding-right: 98px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #797a7c;
+}
+
+.logo{
+  margin-top: 24px;
+  margin-bottom: 30px;
 }
 
 .content-dashboard {
@@ -150,3 +201,69 @@ body {
   width: 100%;
   max-height: 500px;
 }
+
+.rodape{
+  grid-area: content-dashboard;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  gap: 35px;
+  background-color: #fff;
+  
+}
+
+.rodape-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodape-item:nth-child(2){
+  background-color: #E0E0E0;
+  font-weight: bold;
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0px 24px;
+}
+
+.rodape-item:nth-child(3){
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0px 24px;
+}
+
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.month{
+  padding: 8px;
+  border: 0.6px solid #797a7c;
+  border-radius: 5px;
+  color: #797a7c;
+
+}
+
+.smartwatch{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delivered{
+  background-color: #00B69B;
+  border-radius: 20px;
+  width: 93px;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+
