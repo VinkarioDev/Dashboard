@@ -89,7 +89,10 @@ h3{
 .content-dashboard {
   grid-area: content-dashboard;
   border: #E0E0E0 0.6px solid;
-
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
 }
 
 .search {
@@ -150,7 +153,6 @@ h3{
 .cards {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
 }
 
 .cards-dashboard {
@@ -192,12 +194,8 @@ h3{
   text-decoration: none;
 }
 
-.title {
-  margin: 30px;
-}
 
 .salecard {
-    padding: 10px 30px;
   width: 100%;
   max-height: 500px;
 }
@@ -209,6 +207,8 @@ h3{
   height: 250px;
   gap: 35px;
   background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
   
 }
 
